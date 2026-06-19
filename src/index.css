@@ -458,6 +458,13 @@ section h2 {
   }
 }
 
+.icon-container {
+  display: flex; justify-content: center; align-items: center;
+  width: 30px; height: 30px;
+  background: rgba(181, 134, 15, 0.819);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
 /* RESPONSIVE */
 @media (max-width: 768px) {
   nav { padding: 1rem 1.5rem; }
@@ -466,6 +473,10 @@ section h2 {
   #sobre-mi > div, #contacto > div { grid-template-columns: 1fr; gap: 2.5rem; }
   #sobre-mi > div > div:last-child { border-left: none; border-top: 1px solid var(--border); padding-left: 0; padding-top: 2rem; }
   #educacion li { grid-template-columns: 1fr; gap: 0.5rem; }
+  #contacto > div { grid-template-columns: 2fr; gap: 2.5rem; }
+  #contacto a { justify-content: center; }
+  #contacto a p:first-child { font-size: 1rem; }
+  #contacto a p:last-child { font-size: 0.95rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -476,5 +487,11 @@ section h2 {
   header::before {
     display:flex; justify-content: center; align-items: left;
     top: 10%; right: -50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #contacto a p:first-child {
+    display: none;
   }
 }
