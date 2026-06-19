@@ -26,11 +26,11 @@ html { scroll-behavior: smooth; }
 
 body {
   background: var(--bg);
-  color: var(--text);
   font-family: var(--sans);
   font-weight: 300;
   line-height: 1.7;
   font-size: 16px;
+  color: var(--text);
 }
 
 
@@ -38,7 +38,7 @@ body {
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   display: flex; justify-content: space-between; align-items: center;
-  padding: 1.25rem 3rem;
+  padding: 1rem 3rem;
   background: rgba(13,13,13,0.85);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
@@ -168,9 +168,9 @@ section h2 {
 /* LOGO */
 .LogoPortafolio {
   display: inline-block;
-    width: 60px; 
-    height: 60px;
-    inset-inline-start: -10px;
+  width: 70px; 
+  height: 70px;
+  object-fit: contain;
 }
 
 /* ABOUT */
@@ -402,6 +402,62 @@ section h2 {
   margin-bottom: 0.2rem;
 }
 
+/* HAMBURGUESA */
+.hamburguesa {
+  display: none;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--accent);
+  font-size: 1.2rem;
+  padding: 0.4rem 0.75rem;
+  cursor: progress;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburguesa {
+    display: block;
+  }
+
+  .nav-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(13,13,13,0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 0;
+  }
+
+  .nav-mobile li a {
+    display: block;
+    padding: 1rem 2rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s, background 0.2s;
+  }
+
+  .nav-mobile li a:hover {
+    color: var(--text);
+    background: rgba(255,255,255,0.03);
+  }
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   nav { padding: 1rem 1.5rem; }
@@ -414,4 +470,11 @@ section h2 {
 
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
+}
+
+@media (max-width: 768px) {
+  header::before {
+    display:flex; justify-content: center; align-items: left;
+    top: 10%; right: -50%;
+  }
 }
