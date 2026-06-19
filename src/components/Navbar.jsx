@@ -1,13 +1,14 @@
 import { useState } from 'react'
+import LogoPortafolio from '../assets/LogoPortafolio.svg'
 import { Link } from 'react-router-dom'
+import '../index.css'
 
 function Navbar() {
   const [abierto, setAbierto] = useState(false)
 
   return (
     <nav>
-      <img src="../../public/LogoPortafolio.png" alt="Logo" className="LogoPortafolio" />
-
+    <span><img src={LogoPortafolio} class="LogoPortafolio" alt="Portafolio"></img></span>
       {/* Links escritorio */}
       <ul className="nav-links">
         <li><a href="/#sobre-mi" onClick={() => setAbierto(false)}>Sobre mí</a></li>
