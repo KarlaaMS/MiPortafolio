@@ -1,0 +1,31 @@
+#titulo-calculadora {
+  font-size: 2.5em;
+  color: #baa953;
+  font-family: var(--serif);
+  text-align: center;
+  margin-top: 2rem;
+}
+.project-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.boton-imc {
+  background: var(--accent-dim);
+  border: 1px solid rgba(201,169,110,0.2);
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.boton-imc:hover {
+  background: rgba(201,169,110,0.2);
+  border-color: rgba(201,169,110,0.6);
+}

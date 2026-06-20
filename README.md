@@ -60,6 +60,7 @@ src/
 │   ├── Skills.jsx
 │   ├── Projects.jsx
 │   ├── Contact.jsx
+|   ├── projects.css
 │   └── projects/
 │       ├── calculadoraIMC.jsx
 │       ├── listaTareas.jsx

@@ -15,7 +15,7 @@ function Projects() {
     {
         id: 1,
         nivel: "Básico",
-        estado: "Sin Iniciar",
+        estado: "En construcción",
         nombre: "Calculadora IMC",
         descripcion: "Formulario con inputs, cálculo en tiempo real y resultado con categoría",
         tecnologias: ["React", "CSS", "Manejo de formularios", "Lógica condicional"],
