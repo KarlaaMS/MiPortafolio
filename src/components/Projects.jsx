@@ -123,7 +123,7 @@ function Projects() {
             <p>{proyecto.nivel} - {proyecto.estado}</p>
             <h3>{proyecto.nombre}</h3>
             <h5>{proyecto.descripcion}</h5>
-            <Link to={`/${proyecto.enlace}`} target="_blank" rel="noopener noreferrer">
+            <Link to={`/${proyecto.enlace}`} rel="noopener noreferrer">
               <button className="verProyecto">Ver proyecto</button>
             </Link>
           </div>
