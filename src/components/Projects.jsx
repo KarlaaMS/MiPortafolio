@@ -15,7 +15,7 @@ function Projects() {
     {
         id: 1,
         nivel: "Básico",
-        estado: "En construcción",
+        estado: "Finalizado",
         nombre: "Calculadora IMC",
         descripcion: "Formulario con inputs, cálculo en tiempo real y resultado con categoría",
         tecnologias: ["React", "CSS", "Manejo de formularios", "Lógica condicional"],
@@ -24,7 +24,7 @@ function Projects() {
     {
         id: 2,
         nivel: "Básico",
-        estado: "Sin Iniciar",
+        estado: "En construcción",
         nombre: "Lista de tareas",
         descripcion: "Aplicación para agregar, marcar como completada y eliminar tareas",
         tecnologias: ["React", "CSS", "Manejo de estados", "Eventos"],
